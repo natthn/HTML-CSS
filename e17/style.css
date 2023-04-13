@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    height: 97vh;
+    height: 100vh;
     background-color: black;
     background-image: url(imagem/wallpaper002.jpg);
     background-position: center center;
@@ -12,9 +12,13 @@ body{
 
 main{
     background-color: white;
-    max-width: 400px;
+    max-width: 500px;
     padding: 10px;
     margin: auto;
     border-radius: 10px;
     border: 2px solid black;
 }
+
+/* Shorthand - background
+/ color > image > position > repeat > [size] > attachment*/
+/* SIZE funciona somente na teoria de acordo com o W3C, na prática, não funciona*/
