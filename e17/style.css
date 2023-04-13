@@ -1,23 +1,19 @@
 @charset "UTF-8";
 
-div.bloco{
-    border: 4px solid black;
-    border-radius: 20px;
-    background-image: url(imagem/wallpaper003.jpg);
-    height: 200px;
-    margin: 30px;
-}
-
-div#q1{
-    background-position: left top;
-}
-div#q2{
-    background-position: left bottom;
-}
-div#q3{
-    background-position: right bottom; 
-}
-
 body{
-    
+    height: 97vh;
+    background-color: black;
+    background-image: url(imagem/wallpaper002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid black;
 }
