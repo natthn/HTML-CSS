@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -16,6 +19,15 @@ header{
     text-align: center;
 }
 
+header p{
+    font-family: 'Roboto', sans-serif;
+}
+
+header a{
+    color: white;
+
+}
+
 header > h1{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -25,6 +37,7 @@ header > h1{
 
 main{
     border: 2px solid black;
+    font-family: 'Roboto', sans-serif;
 }
 
 section{
@@ -40,18 +53,17 @@ section.normal{
 
 section.imagem{
     background-color: rgb(211, 167, 193);
-
 }
 
 section.imagem > p{
     background-color: #D9A3B3;
-    width: 650px;
+    display: inline-block;
 }
 
-
-
-
-
+section.normal > p{
+    background-color: #D9A3B3;  
+    display: inline-block;
+}
 
 a {
     text-decoration: none;
