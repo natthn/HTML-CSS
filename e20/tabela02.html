@@ -6,58 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
     <style>
-        td{
-            padding: 3px;
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        thead, tfoot{
+            background-color: rgb(128, 128, 128);
+            color: rgb(231, 231, 231);
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            width: 250px;
         }
         table{
             border: 1px solid black;
             border-collapse: collapse;
+            position: relative;
         }
-        td{
-            border: 1px solid black;
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(128, 128, 128);
+        }
+        
+        caption{
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
+    <h1>QUANTIDADE DE TRANSAS FERTEIS</h1>
     <!--
         Anatomia de tabelas grandes
         TABLE    
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
                 TR, TD, TH
             TFOOT
-            TR, TD, TH
+                TR, TD, TH
     -->
     <table>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col">Estados</th>
+                <th scope="col" class="pop">População</th>
             </tr>
         </thead>
+        <tbody>     
             <tr>
-                <td>1</td>
                 <td>São Paulo</td>
-                <td>46.024.937</td>
+                <td class="num">46.024.937</td>
             </tr>
             <tr>
-                <td>2</td>
                 <td>Minas Gerais</td>
-                <td>20.732.660</td>
+                <td class="num">20.732.660</td>
             </tr>
             <tr>
-                <td>3</td>
                 <td>Rio de Janeiro</td>
-                <td>16.615.526</td>
+                <td class="num">16.615.526</td>
             </tr>
-        <tbody>
-
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.659.023</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.835.379</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.088.065</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.051.113</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.936.431</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.442.962</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.762.154</td>
+            </tr>
         </tbody>
         <tfoot>
-
+            <th scope="row">População Total</th>
+            <td>00000000</td>
         </tfoot>
+        <caption>População dos Estados Brasileiros</caption>
     </table>
 </body>
 </html>
